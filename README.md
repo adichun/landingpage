@@ -76,3 +76,6 @@ Adi Chandra Setiawan
 🔗 LinkedIn
 
 ✉️ setiawanadichan@gmail.com
+
+
+#Watch Tailwind via bash npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
