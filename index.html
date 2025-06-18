@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Agency | Adichan</title>
+  <link href="./src/output.css" rel="stylesheet">
+  <!-- <link href="./src/styles.css" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.3.0/dist/dotlottie-wc.js" type="module"></script>
+</head>
+<style>
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: white;
+  }
+</style>
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav id="navbar" class="bg-white fixed top-0 left-0 right-0 z-50 transition-shadow">
+  <div class="container mx-auto text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+            <span class="font-bold text-xl text-orange-500 font">CELERIX</span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-6">
+            <a href="#" class="text-gray-700 p-2 hover:text-orange-500">Home</a>
+            <a href="#" class="text-gray-700 p-2 hover:text-orange-500">About Us</a>
+            <a href="#" class="text-gray-700 p-2 hover:text-orange-500">Services</a>
+            <a href="#" class="text-gray-700 p-2 hover:text-orange-500">Contact Us</a>
+        </div>
+
+          <!-- Mobile Hamburger -->
+        <div class="flex items-center md:hidden" >
+          <button style="cursor: pointer;" id="mobile-menu-button" class="text-gray-700 hover:text-orange-500 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Home</a>
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">About</a>
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Product</a>
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-orange-100">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container mx-auto mt-16">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 p-4">
+    <div class="md:mb-0 p-4 mt-6">
+      <h1 class="text-4xl md:text-5xl font-bold">
+        We create <span class="text-orange-500">solutions</span> for your business
+      </h1>
+      <p class="text-gray-600 mb-8 mt-2">
+        Our team keeps a keen eye on emerging trends and technologies to ensure your marketing campaigns remain cutting-edge.
+      </p>
+      <button class="bg-orange-500 text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-orange-600 transition duration-300 hover:cursor-pointer">
+        Get Started
+      </button>
+    </div>
+    <div class="bg-white p-4">
+      <dotlottie-wc src="https://lottie.host/c54b2e48-5bb5-4a6c-a3ca-1e7c0fa29b3b/ebtX7ULVi5.lottie" autoplay loop></dotlottie-wc>
+    </div>
+  </div>
+</div>
+
+
+<div>
+  <div class="bg-gray-200 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+      <p class="text-gray-600 mb-8">We offer a wide range of digital services to help your business grow.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+          <p class="text-gray-600">Building responsive and user-friendly websites.</p> 
+        </div></div></div></div>
+</div>
+
+<footer>
+  <div class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">© 2023 Digital Agency. All rights reserved.</p>
+      <p class="text-sm">Made with ❤️ by Adichan</p>
+    </div>
+  </div>
+  <div class="bg-gray-900 text-white py-2">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">Follow us on:
+        <a href="#" class="text-orange-500 hover:underline">Facebook</a>,
+        <a href="#" class="text-orange-500 hover:underline">Twitter</a>,
+        <a href="#" class="text-orange-500 hover:underline">Instagram</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      navbar.classList.add('shadow-md');
+    } else {
+      navbar.classList.remove('shadow-md');
+    }
+  });
+</script>
+
+</body>
+</html>
