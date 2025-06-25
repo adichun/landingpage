@@ -1,2 +1,14 @@
 @import "tailwindcss";
 
+html {
+    scroll-behavior: smooth;
+}
+.bg-custom-blue {
+  background-color: #ACBCF9; /* Custom blue color */
+}
+.bg-custom-gray {
+  background-color: #1F2937; /* Custom grey color */
+}
+.custom-inset-shadow {
+  box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
+}
